@@ -5,7 +5,7 @@ def main():
     init_state = p.factory.entry_state()
     simulation = p.factory.simgr(init_state)
     good = 0x80485e5
-    bad = 0x80485a8
+    bad = [0x80485a8,0x80485e7]
 
     simulation.explore(find=good, avoid=bad)
 
@@ -17,4 +17,3 @@ def main():
 
 if __name__== '__main__':
     main()
-
